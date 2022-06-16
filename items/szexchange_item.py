@@ -61,6 +61,7 @@ class SzexchangeItem(UpdateItem):
             else:
                 self.jsonurl = parse.urljoin(base_url, data['docpubjsonurl'])
             self.time = datetime.datetime.now()
+            self.downloaded = 0
             return self
 
         else:

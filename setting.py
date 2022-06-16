@@ -140,8 +140,8 @@ OTHERS_LOG_LEVAL = "ERROR"  # 第三方库的log等级
 # print("当前工作路径为 " + os.getcwd())
 
 #################### virjar代理
-VIRJAR_USERNAME="xxxx"
-VIRJAR_PASSWORD="xxxx"
+VIRJAR_USERNAME="rh92kVa1"
+VIRJAR_PASSWORD="jjkk2255"
 proxy_list = [
             f'http://{VIRJAR_USERNAME}:{VIRJAR_PASSWORD}@haproxy.iinti.cn:{i}'
             for i in
