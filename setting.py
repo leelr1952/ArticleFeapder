@@ -153,9 +153,15 @@ def get_random_proxy():
 
 proxies_aiohttp = "%(proxy)s/" % {"proxy": get_random_proxy()}
 
-############################## 文件存储路径
-SH_DOWNLOAD_PATH = os.path.join(os.path.dirname(os.getcwd()), 'download', 'sh')
-SZ_DOWNLOAD_PATH = os.path.join(os.path.dirname(os.getcwd()), 'download', 'sz')
-XUEQIU_DOWNLOAD_PATH = os.path.join(os.path.dirname(os.getcwd()), 'download', 'xueqiu')
+############################## 原始文件存储路径
+SH_DOWNLOAD_PATH = os.path.join(os.path.dirname(__file__), 'download', 'sh')
+SZ_DOWNLOAD_PATH = os.path.join(os.path.dirname(__file__), 'download', 'sz')
+XUEQIU_DOWNLOAD_PATH = os.path.join(os.path.dirname(__file__), 'download', 'xueqiu')
+
+############################## 清洗文件存储路径
+SH_PARSER_PATH = os.path.join(os.path.dirname(__file__), 'parserfiles', 'sh')
+SZ_PARSER_PATH = os.path.join(os.path.dirname(__file__), 'parserfiles', 'sz')
+XUEQIU_PARSER_PATH = os.path.join(os.path.dirname(__file__), 'parserfiles', 'xueqiu')
+
 
 

@@ -62,6 +62,7 @@ class XueqiuItem(Item):
         self.user_id = data.get('user_id')
         self.view_count = data.get('view_count')
         self.time = datetime.datetime.now()
+        self.downloaded = 0
         return self
 
     def download_file(self, data):
